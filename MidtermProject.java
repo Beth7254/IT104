@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Sample {
+public class MidtermProject {
    static Scanner scanner = new Scanner(System.in);
 
    public static void main(String[] args) throws IOException, InterruptedException {
@@ -15,15 +15,15 @@ public class Sample {
       while (continueCalculating) {
          int choice = 0;
          clear();
-         System.out.println("╔══════════════════════╗");
-         System.out.println("║      MAIN MENU       ║");
-         System.out.println("║══════════════════════║");
-         System.out.println("║ 1. Addition          ║");
-         System.out.println("║ 2. Subtraction       ║");
-         System.out.println("║ 3. Multiplication    ║");
-         System.out.println("║ 4. Division          ║");
-         System.out.println("║ 5. Exit Program      ║");
-         System.out.println("╚══════════════════════╝");
+         System.out.println("╔═════════════════════════╗");
+         System.out.println("║      MAIN MENU          ║");
+         System.out.println("║═════════════════════════║");
+         System.out.println("║ 1. Addition >_<         ║");
+         System.out.println("║ 2. Subtraction >_<      ║");
+         System.out.println("║ 3. Multiplication >_<   ║");
+         System.out.println("║ 4. Division  >_<        ║");
+         System.out.println("║ 5. Exit Program >_<     ║");
+         System.out.println("╚═════════════════════════╝");
 
          do {
             System.out.print("\nEnter choice: ");
