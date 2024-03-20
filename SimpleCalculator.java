@@ -55,7 +55,7 @@ public class SimpleCalculator {
                performDivision();
                break;
             case 5:
-               System.out.println("Ciao");
+               System.out.println("Arigato >_< ");
                continueCalculating = false;
                break;
          }
@@ -137,6 +137,3 @@ public class SimpleCalculator {
       }
    }
 }
-
-
-
