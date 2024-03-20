@@ -55,16 +55,16 @@ public class SimpleCalculator {
                performDivision();
                break;
             case 5:
-               System.out.println("Arigato >_< ");
+               System.out.println("THANK YOU ");
                continueCalculating = false;
                break;
          }
 
          if (continueCalculating) {
-            System.out.print("\nDo you want to try another operation? (yes/no): ");
+            System.out.print("\nDo you want to try another operation? (Y/N): ");
             String tryAgain = scanner.next().toLowerCase();
 
-            if (!tryAgain.equals("yes")) {
+            if (!tryAgain.equals("Y")) {
                clear();
                continueCalculating = false;
             }
