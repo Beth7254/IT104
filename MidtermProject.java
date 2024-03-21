@@ -43,16 +43,16 @@ public class MidtermProject {
 
          switch (choice) {
             case 1:
-               performAddition();
+               Addition();
                break;
             case 2:
-               performSubtraction();
+               Subtraction();
                break;
             case 3:
-               performMultiplication();
+               Multiplication();
                break;
             case 4:
-               performDivision();
+               Division();
                break;
             case 5:
                System.out.println("Arigato >_< ");
@@ -72,7 +72,7 @@ public class MidtermProject {
       }
    }
 
-   static void performAddition() {
+   static void Addition() {
       System.out.print("Welcome to Addition (+)\n");
       System.out.print("Enter first number: ");
       int num1 = scanner.nextInt();
@@ -84,7 +84,7 @@ public class MidtermProject {
       System.out.printf("The sum of %d and %d is %d\n", num1, num2, sum);
    }
 
-   static void performSubtraction() {
+   static void Subtraction() {
       System.out.print("Welcome to Subtraction (-)\n");
       System.out.print("Enter first number: ");
       int num1 = scanner.nextInt();
@@ -96,7 +96,7 @@ public class MidtermProject {
       System.out.printf("The difference of %d and %d is %d\n", num1, num2, diff);
    }
 
-   static void performMultiplication() {
+   static void Multiplication() {
       System.out.print("Welcome to Multiplication (*) \n");
       System.out.print("Enter first number: ");
       int num1 = scanner.nextInt();
@@ -108,7 +108,7 @@ public class MidtermProject {
       System.out.printf("The product of %d and %d is %d\n", num1, num2, prod);
    }
 
-   static void performDivision() {
+   static void Division() {
       System.out.print("Welcome to Division (/) \n");
       System.out.print("Enter first number: ");
       int num1 = scanner.nextInt();
