@@ -4,10 +4,10 @@ public class StringLengthComparator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("String 1: ");
+        System.out.print("String One: ");
         String string1 = scanner.nextLine();
 
-        System.out.print("String 2: ");
+        System.out.print("String Two: ");
         String string2 = scanner.nextLine();
 
         int length1 = string1.length();
