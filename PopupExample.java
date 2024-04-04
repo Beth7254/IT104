@@ -11,15 +11,15 @@ import java.awt.event.ActionListener; //actionListener
 
 public class PopupExample {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Popup Example"); //
-        frame.setSize(1000, 800);
+        JFrame frame = new JFrame("Hello! This is the Popup Example 😉");
+        frame.setSize(500, 350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel mainPanel = new JPanel(new BorderLayout());
 
         JPanel inputPanel = new JPanel(new GridLayout(2, 1));
         JTextField textField = new JTextField();
-        JButton button = new JButton("Show Popup (¬‿¬)");
+        JButton button = new JButton("Show Popup 💻");
 
         button.addActionListener(new ActionListener() {
 
@@ -34,7 +34,7 @@ public class PopupExample {
         inputPanel.add(button);
 
         JLabel label = new JLabel("Enter text and click the button to show the Popup Message");
-        mainPanel.add(inputPanel, BorderLayout.SOUTH);
+        mainPanel.add(inputPanel, BorderLayout.CENTER);
         mainPanel.add(label, BorderLayout.NORTH);
 
         frame.add(mainPanel);
