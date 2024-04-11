@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 public class Activity3 {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Activity #3");
-        frame.setSize(400, 300);
+        frame.setSize(350, 250);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel mainPanel = new JPanel(new BorderLayout());
