@@ -1,6 +1,4 @@
 import java.awt.GridLayout;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JFrame;
