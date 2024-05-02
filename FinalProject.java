@@ -111,12 +111,12 @@ class Main {
             }
         });
 
-        JButton mainPageButton = new JButton("Home Page");
+        JButton mainPageButton = new JButton("CALCULATOR");
         mainPageButton.setFont(new Font("Wide Heavy", Font.BOLD, 20));
         mainPageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                cardLayout.show(mainPanel, "Home Page");
+                cardLayout.show(mainPanel, "CALCULATOR");
                
             }
         });
@@ -167,12 +167,10 @@ class Main {
              JLabel imageLabel = new JLabel(imageIcon);
              panel.add(imageLabel);
 
-
-
         return panel;
     }
-
-    public static void main(String[] args) {
+                                                                
+       public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
