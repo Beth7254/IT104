@@ -2,6 +2,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+
 
 public class FinalProject {
     public static void main(String[] args) {
@@ -22,7 +26,9 @@ public class FinalProject {
         JTextField userField = new JTextField();
         JPasswordField passwordField = new JPasswordField();
         JButton loginButton = new JButton("LOG IN");
+        loginButton.setFont(new Font("Wide Heavy", Font.BOLD, 18)); 
         JButton cancelButton = new JButton("CANCEL");
+        cancelButton.setFont(new Font("Wide Heavy", Font.BOLD, 18));
 
         inputPanel.add(new JLabel("                                                       LOG "));
         inputPanel.add(new JLabel("IN"));
@@ -32,9 +38,14 @@ public class FinalProject {
         inputPanel.add(passwordField);
         inputPanel.add(new JLabel());
         inputPanel.add(new JLabel());
+        inputPanel.setFont(new Font("Wide Heavy", Font.BOLD, 18)); 
 
+       
+        
+        
         inputPanel.add(loginButton);
         inputPanel.add(cancelButton);
+
         loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -47,6 +58,7 @@ public class FinalProject {
                 } else {
                     JOptionPane.showMessageDialog(frame, "Invalid Username/Password", "(╯°□°)╯",
                             JOptionPane.ERROR_MESSAGE);
+                    
                 }
             }
         });
@@ -87,17 +99,30 @@ class Main {
         cardLayout = new CardLayout();
         mainPanel = new JPanel(cardLayout);
 
-        navigationPanel = new JPanel(new GridLayout(2, 1));
+        navigationPanel = new JPanel(new GridLayout(3, 1));
+
+        JButton welcomeButton = new JButton("<html>WELCOME TO MY PAGE,<br> I'm Mary Beth Gracia💜<html>");
+        welcomeButton.setFont(new Font("Wide Heavy", Font.BOLD, 18)); 
+       
+        welcomeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cardLayout.show(mainPanel, "WELCOME");
+            }
+        });
 
         JButton mainPageButton = new JButton("Home Page");
+        mainPageButton.setFont(new Font("Wide Heavy", Font.BOLD, 20));
         mainPageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 cardLayout.show(mainPanel, "Home Page");
+               
             }
         });
 
         JButton otherPageButton = new JButton("Other Page");
+        otherPageButton.setFont(new Font("Wide Heavy", Font.BOLD, 20));
         otherPageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -106,6 +131,7 @@ class Main {
         });
 
         JButton signoutButton = new JButton("Sign Out");
+        signoutButton.setFont(new Font("Wide Heavy", Font.BOLD, 20));
         signoutButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -113,10 +139,13 @@ class Main {
             }
         });
 
-        navigationPanel.add(mainPageButton);
 
+        navigationPanel.add(welcomeButton);
+        navigationPanel.add(mainPageButton);
         navigationPanel.add(signoutButton);
 
+
+        mainPanel.add(createMainPage(), " Welcome Button");
         mainPanel.add(createMainPage(), "Home Page");
 
         frame.add(navigationPanel, BorderLayout.WEST);
@@ -129,21 +158,16 @@ class Main {
         JPanel panel = new JPanel();
 
         JLabel bethLabel = new JLabel(
-                "Ni hao, I'm Mary Beth but you can call me Beth for short, and this page is all about me");
-        bethLabel.setFont(new Font("Jersey 15", Font.PLAIN, 20));
-        JLabel introLabel = new JLabel("Nihao, and welcome to my page.");
-        introLabel.setFont(new Font("Jersey 15", Font.BOLD, 20));
-        JLabel introLabel2 = new JLabel(
-                "I am Mary Beth Deniega Gracia, I'am 19 years of age, I'am pursuing a degree in Information Technology at Don Bosco Technical College Cebu-Inc.");               
-        introLabel2.setFont(new Font("Jersey 15y", Font.BOLD, 20));
-        JLabel introLabel3 = new JLabel(
-                "ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧");
+                "<html>Ni hao, I'm I am Mary Beth Deniega Gracia, but you can call me Beth for short, and this page is all about me.<br> I' am 19 years of age. Don't talk about my relationship because it's complicated but I love who I ' am now <br> I' am a freshman student, pursuing a degree in Information Technology (BSIT) at Don Bosco Technical College Cebu-Inc. <br> I love pets, cute stuffs, foodies, and etc, that's make me happy. I want to travel other countries especially Japan, Switzerland, <br> Italy and many more.<br>  I' am a simple girl who's living in this world that's full of surprise.  <html>");
+             bethLabel.setFont(new Font("Lucida Calligraphy", Font.PLAIN, 18));  
+             panel.add(bethLabel);
 
-        introLabel3.setFont(new Font("Jersey 15", Font.BOLD, 20));
-        panel.add(bethLabel);
-        panel.add(introLabel);
-        panel.add(introLabel2);
-        panel.add(introLabel3);
+             ImageIcon imageIcon = new ImageIcon ("C:/Users/Student/Documents/IT104/pics/HI.png");
+             imageIcon.setImage(imageIcon.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH));
+             JLabel imageLabel = new JLabel(imageIcon);
+             panel.add(imageLabel);
+
+
 
         return panel;
     }
