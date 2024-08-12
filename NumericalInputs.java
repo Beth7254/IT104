@@ -5,12 +5,12 @@ public class NumericalInputs
     public static void main(String[] args) {
         int num1;
         int num2;
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the first number: ");
-        num1 = scanner.nextInt();
-        System.out.print("Enter the second number: ");
-        num2 = scanner.nextInt();
-
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.print("Enter the first number: ");
+            num1 = scanner.nextInt();
+            System.out.print("Enter the second number: ");
+            num2 = scanner.nextInt();
+        }
         int Sum = num1 + num2;
         int Difference = num1 - num2;
         int Product = num1 * num2;

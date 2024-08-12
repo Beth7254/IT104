@@ -152,7 +152,7 @@ class Main {
         JPanel panel = new JPanel();
 
         JLabel BethLabel = new JLabel(
-                "<html> Hi, I'm Mary Beth Gracia,<br> and this page is <br> all about myself💜 <html>");
+                "<html> Hi, I'm Mary Beth Gracia, and this page is all about myself💜 <html>");
         BethLabel.setFont(new Font("Lucida Calligraphy", Font.BOLD, 20));
         panel.add(BethLabel, BorderLayout.CENTER);
 
