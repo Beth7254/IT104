@@ -6,7 +6,7 @@ import java.awt.event.*;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-public class FinalFinal {
+public class Array_Final {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
@@ -25,12 +25,13 @@ public class FinalFinal {
         JTextField userField = new JTextField();
         JPasswordField passwordField = new JPasswordField();
 
-        JButton loginButton = new JButton("Login");
-        JButton cancelButton = new JButton("Cancel");
+        JButton loginButton = new JButton("Login"); //for login
+        JButton cancelButton = new JButton("Cancel"); //for cancel
 
+        //for the log in panel and button
         inputPanel.add(new JLabel("                                                       LOG "));
         inputPanel.add(new JLabel("IN"));
-        inputPanel.add(new JLabel("Username:"));
+        inputPanel.add(new JLabel("Username:")); 
         inputPanel.add(userField);
         inputPanel.add(new JLabel("Password:"));
         inputPanel.add(passwordField);
@@ -39,6 +40,7 @@ public class FinalFinal {
 
         inputPanel.add(loginButton);
         inputPanel.add(cancelButton);
+
 
         loginButton.addActionListener(new ActionListener() {
             @Override
